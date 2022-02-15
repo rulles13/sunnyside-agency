@@ -1,0 +1,19 @@
+header{
+  height: 540px;
+  width: 375px;
+  background-image: url(../../images/mobile/image-header.jpg);
+  background-size: cover;
+  
+}
+.navigation{
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.header__title{
+  padding-top: 50px;
+  text-align: center;
+}
