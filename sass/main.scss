@@ -1,5 +1,8 @@
-@use "./base/reset";
-@use "./base/font";
-@use "./composants/burgerMenu";
-@use "./layout/header";
-@use "./layout/body";
+@import "./base/reset";
+@import "./base/color";
+@import "./base/font";
+@import "./composants/burgerMenu";
+@import "./composants/mantras";
+@import "./composants/metiers";
+@import "./layout/header";
+@import "./layout/body";

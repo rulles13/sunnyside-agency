@@ -1,0 +1,30 @@
+.metiers{
+    position: relative;
+    
+    img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        z-index: 0;    
+    }
+
+    &__title{
+        top: 400px;
+    }
+
+    &__text{
+        top: 450px;
+    }
+
+    .centred{
+        position: absolute;
+        z-index: 5;
+        left: 15px;
+        right: 15px;
+        //transform: translateX(-50%);
+    }
+
+
+} 
+

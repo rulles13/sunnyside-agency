@@ -4,12 +4,26 @@
   box-sizing: border-box;
 }
 
+/* --- Neutral --- */
+/* --- primary --- */
 body {
   font-family: "Barlow", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Fraunces", serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: 0.1em;
+  color: white;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5em;
 }
 
 /* (A) BREAK INTO VERTICAL MENU */
@@ -69,6 +83,49 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
 }
+.mantras {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.mantras img {
+  width: 100%;
+}
+.mantras__card {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 30px;
+  height: 440px;
+}
+.mantras p {
+  size: 1.4rem;
+  line-height: 1.8em;
+  height: 180px;
+}
+
+.metiers {
+  position: relative;
+}
+.metiers img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 0;
+}
+.metiers__title {
+  top: 400px;
+}
+.metiers__text {
+  top: 450px;
+}
+.metiers .centred {
+  position: absolute;
+  z-index: 5;
+  left: 15px;
+  right: 15px;
+}
+
 header {
   height: 540px;
   width: 375px;
