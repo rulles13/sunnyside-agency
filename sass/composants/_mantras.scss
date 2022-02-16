@@ -19,6 +19,29 @@
         height: 180px;
     }
 
+    &__btn{
+        font-family: $header-font;
+        font-size: 1rem;
+        font-weight: bolder;
+        background-color: transparent;
+        border: none;
+        position: relative;
+
+        &::before{
+            position: absolute;
+            content: "";
+            height: 10px;
+            width: 120px;
+            border-radius: 5px;
+            background-color: $Yellow;
+            opacity: 0.3;
+            z-index: -5;
+            top: 12px;
+            right: 50%;
+            transform: translateX(50%);
+        }
+        }
+
 
 
 }

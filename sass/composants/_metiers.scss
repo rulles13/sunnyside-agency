@@ -1,8 +1,11 @@
 .metiers{
-    position: relative;
+    &__card{
+        position: relative;
+        height: 600px;
+    }
     
     img{
-        position: absolute;
+        //position: absolute;
         top: 0;
         right: 0;
         width: 100%;
@@ -10,11 +13,16 @@
     }
 
     &__title{
-        top: 400px;
+        top: 390px;
+        font-family: $header-font;
+        font-weight: bold;
+        font-size: 1.9rem;
+        
     }
 
     &__text{
-        top: 450px;
+        top: 460px;
+        line-height: 1.5em;
     }
 
     .centred{
