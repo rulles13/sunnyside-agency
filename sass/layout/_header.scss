@@ -6,11 +6,14 @@ header{
   
 }
 .navigation{
+  position: relative;
   height: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
+  img{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .header__title{
