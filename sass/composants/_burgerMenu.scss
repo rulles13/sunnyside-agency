@@ -3,9 +3,11 @@
 #hamnav input:checked ~ #hamitems {
   display: block;
   position: absolute;
+  padding: 20px 0;
   width: 325px;
-  background-color:white;
-  margin: 25px;
+  height: 300px;
+  background-color: white;
+  right: 25px;
   top: 100px;
   }
 #hamnav label { 
@@ -18,11 +20,23 @@
   transform: translateY(-50%);
 }
 
-#hamitems a {
-  display: flex;
-  justify-content: flex-end;
-	align-items: center;
-  padding-right: 15px;
-  width: 100%;
-  height: 50px; 
+#hamitems{
+  .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    line-height: 55px;
+  }
+  a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    width: 140px;
+    height: 60px;
+    border-radius: 30px;
  }
+
+ a:hover{
+  background-color: $Yellow;
+ }
+}

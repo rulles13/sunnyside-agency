@@ -1,36 +1,30 @@
 .metiers{
     &__card{
-        position: relative;
         height: 600px;
-    }
-    
-    img{
-        //position: absolute;
-        top: 0;
-        right: 0;
         width: 100%;
-        z-index: 0;    
+        background-size: cover;
+    }
+    &--graphDesign{
+        background-image: url(../../images/mobile/image-graphic-design.jpg);  
+        color: $Dark_graphic_design_text;
+    }
+    &--photography{
+        background-image: url(../../images/mobile/image-photography.jpg);  
+        color: $Dark_photography_text;
     }
 
     &__title{
-        top: 390px;
+        //top: 390px;
         font-family: $header-font;
         font-weight: bold;
         font-size: 1.9rem;
-        
+        padding-bottom: 30px;
+        padding-top: 400px;  
     }
 
     &__text{
-        top: 460px;
+        //top: 460px;
         line-height: 1.5em;
-    }
-
-    .centred{
-        position: absolute;
-        z-index: 5;
-        left: 15px;
-        right: 15px;
-        //transform: translateX(-50%);
     }
 
 

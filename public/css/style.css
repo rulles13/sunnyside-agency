@@ -38,9 +38,11 @@ h2 {
 #hamnav input:checked ~ #hamitems {
   display: block;
   position: absolute;
+  padding: 20px 0;
   width: 325px;
+  height: 300px;
   background-color: white;
-  margin: 25px;
+  right: 25px;
   top: 100px;
 }
 
@@ -54,13 +56,22 @@ h2 {
   transform: translateY(-50%);
 }
 
-#hamitems a {
+#hamitems .item {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  padding-right: 15px;
-  width: 100%;
-  height: 50px;
+  height: 65px;
+  line-height: 55px;
+}
+#hamitems a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  width: 140px;
+  height: 60px;
+  border-radius: 30px;
+}
+#hamitems a:hover {
+  background-color: #fad400;
 }
 
 .mantras {
@@ -105,35 +116,49 @@ h2 {
   transform: translateX(50%);
 }
 
-.metiers__card {
-  position: relative;
-  height: 600px;
+@media only screen and (min-width: 768px) {
+  .mantras {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .mantras img {
+    width: 50%;
+  }
+  .mantras__card {
+    width: 50%;
+  }
+  .mantras--reverse {
+    flex-direction: column-reverse;
+  }
 }
-.metiers img {
-  top: 0;
-  right: 0;
+.metiers__card {
+  height: 600px;
   width: 100%;
-  z-index: 0;
+  background-size: cover;
+}
+.metiers--graphDesign {
+  background-image: url(../../images/mobile/image-graphic-design.jpg);
+  color: #25564b;
+}
+.metiers--photography {
+  background-image: url(../../images/mobile/image-photography.jpg);
+  color: #19536b;
 }
 .metiers__title {
-  top: 390px;
   font-family: "Fraunces", serif;
   font-weight: bold;
   font-size: 1.9rem;
+  padding-bottom: 30px;
+  padding-top: 400px;
 }
 .metiers__text {
-  top: 460px;
   line-height: 1.5em;
-}
-.metiers .centred {
-  position: absolute;
-  z-index: 5;
-  left: 15px;
-  right: 15px;
 }
 
 .testimonials {
   padding: 0 30px;
+  display: flex;
+  flex-direction: column;
 }
 .testimonials__title {
   font-family: "Fraunces", serif;
@@ -144,6 +169,9 @@ h2 {
 }
 .testimonials__card {
   letter-spacing: -0.05rem;
+  width: 325px;
+  border: 3px solid green;
+  margin: auto;
 }
 .testimonials__picture {
   height: 72px;
@@ -168,7 +196,7 @@ h2 {
 }
 
 .gallery {
-  width: 375px;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -178,9 +206,10 @@ h2 {
 
 header {
   height: 540px;
-  width: 375px;
+  width: 100%;
   background-image: url(../../images/mobile/image-header.jpg);
   background-size: cover;
+  background-position: bottom;
 }
 
 .navigation {
@@ -199,14 +228,25 @@ header {
   text-align: center;
 }
 
+@media only screen and (min-width: 768px) {
+  header {
+    background-image: url(../../images/desktop/image-header.jpg);
+  }
+}
 body {
   display: flex;
   flex-direction: column;
   margin: auto;
-  width: 375px;
   text-align: center;
+  min-width: 375px;
 }
 
+@media only screen and (min-width: 768px) {
+  body {
+    max-width: 1440px;
+    margin: auto;
+  }
+}
 footer {
   position: relative;
   color: #458c7e;
